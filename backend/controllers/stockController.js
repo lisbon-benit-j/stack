@@ -1,7 +1,7 @@
 const Product = require("../models/Product");
 const Transaction = require("../models/Transaction");
 
-// STOCK IN
+
 const stockIn = async (req, res) => {
   try {
     const { name, quantity } = req.body;
@@ -36,7 +36,7 @@ const stockIn = async (req, res) => {
   }
 };
 
-// STOCK OUT
+
 const stockOut = async (req, res) => {
   try {
     const { name, quantity } = req.body;
