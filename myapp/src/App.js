@@ -15,10 +15,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* LOGIN */}
+        
         <Route path="/" element={<Login />} />
 
-        {/* DASHBOARD */}
+      
         <Route
           path="/dashboard"
           element={
@@ -34,7 +34,7 @@ function App() {
           }
         />
 
-        {/* PRODUCTS */}
+        
         <Route
           path="/products"
           element={
@@ -50,7 +50,7 @@ function App() {
           }
         />
 
-        {/* STOCK IN */}
+        
         <Route
           path="/stockin"
           element={
@@ -66,7 +66,7 @@ function App() {
           }
         />
 
-        {/* STOCK OUT */}
+      
         <Route
           path="/stockout"
           element={
@@ -82,7 +82,7 @@ function App() {
           }
         />
 
-        {/* REPORTS */}
+        
         <Route
           path="/reports"
           element={
