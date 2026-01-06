@@ -1,5 +1,5 @@
 const authMiddleware = (req, res, next) => {
-  next(); // TEMP: allow all requests
+  next(); 
 };
 
 module.exports = authMiddleware;
