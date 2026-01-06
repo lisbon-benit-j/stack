@@ -1,6 +1,6 @@
 const Transaction = require("../models/Transaction");
 
-// DATE-WISE REPORT
+
 const getByDate = async (req, res) => {
   try {
     const { date } = req.query;
