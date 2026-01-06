@@ -20,7 +20,7 @@ export default function StockIn() {
     }
   };
 
-  // ✅ STOCK IN FUNCTION (THIS IS WHAT YOU ASKED)
+  
   const submit = async () => {
     try {
       if (!name || qty === "") {
@@ -36,7 +36,7 @@ export default function StockIn() {
       alert("Stock added successfully");
 
       setQty("");
-      loadProducts(); // refresh list
+      loadProducts(); 
     } catch (error) {
       alert(
         error.response?.data?.message ||
@@ -52,7 +52,7 @@ export default function StockIn() {
       </h2>
 
       <div className="bg-white p-4 rounded shadow w-96">
-        {/* Product Dropdown */}
+        
         <select
           className="border p-2 w-full mb-3"
           value={name}
@@ -66,7 +66,7 @@ export default function StockIn() {
           ))}
         </select>
 
-        {/* Quantity Input */}
+        
         <input
           type="number"
           className="border p-2 w-full mb-4"
@@ -75,7 +75,7 @@ export default function StockIn() {
           onChange={(e) => setQty(e.target.value)}
         />
 
-        {/* Submit Button */}
+      
         <button
           onClick={submit}
           className="bg-emerald-600 text-white w-full py-2 rounded hover:bg-emerald-700"
