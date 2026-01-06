@@ -6,7 +6,7 @@ export default function StockOut() {
   const [name, setName] = useState("");
   const [qty, setQty] = useState("");
 
-  // Load products for dropdown
+  
   useEffect(() => {
     loadProducts();
   }, []);
@@ -20,7 +20,7 @@ export default function StockOut() {
     }
   };
 
-  // ✅ STOCK OUT FUNCTION
+  
   const submit = async () => {
     try {
       if (!name || qty === "") {
@@ -36,7 +36,7 @@ export default function StockOut() {
       alert("Stock removed successfully");
 
       setQty("");
-      loadProducts(); // refresh products
+      loadProducts(); 
     } catch (error) {
       alert(
         error.response?.data?.message ||
@@ -52,7 +52,7 @@ export default function StockOut() {
       </h2>
 
       <div className="bg-white p-4 rounded shadow w-96">
-        {/* Product Dropdown */}
+        
         <select
           className="border p-2 w-full mb-3"
           value={name}
@@ -66,7 +66,7 @@ export default function StockOut() {
           ))}
         </select>
 
-        {/* Quantity Input */}
+        
         <input
           type="number"
           className="border p-2 w-full mb-4"
@@ -75,7 +75,7 @@ export default function StockOut() {
           onChange={(e) => setQty(e.target.value)}
         />
 
-        {/* Submit Button */}
+        
         <button
           onClick={submit}
           className="bg-red-600 text-white w-full py-2 rounded hover:bg-red-700"
